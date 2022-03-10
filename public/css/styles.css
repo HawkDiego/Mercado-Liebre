@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+header {
+  background-color: #eac926;
+  font-family: "Roboto", sans-serif;
+}
+h2 {
+  padding: 5%;
+  font-size: 24px;
+}
+
+.buscador {
+  padding: 5%;
+}
+
+.centrado {
+  text-align: center;
+  font-size: 12px;
+}
+
+ul li a {
+  padding: 0%;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.boton {
+  text-align: center;
+}
+
+.boton {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 20px;
+  margin: auto;
+  padding: 10px;
+  width: 20px;
+}
+
+main {
+  background-color: #ebebeb;
+}
+
+.oferta {
+  color: #39b54a;
+}
+
+figure {
+  display: inline-block;
+  background-color: #fff;
+  margin: 5px 20px 10px 15px;
+  font-size: 16px;
+  object-fit: contain;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.precio {
+  font-size: 18px;
+}
+
+.descripcion {
+  color: #666;
+}
+
+footer {
+  text-align: center;
+  display: block;
+  background-color: #fff;
+  padding-top: 10px;
+}
+
+.icono {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1259c3;
+}
+
+footer section {
+  color: #666;
+  padding: 10%;
+}
+
+.pie {
+  color: #666;
+  text-align: left;
+  padding: 5%;
+}
