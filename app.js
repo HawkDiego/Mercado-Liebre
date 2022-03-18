@@ -9,6 +9,14 @@ app.get('/', (req, res) => {
     res.sendFile(base + '/views/home.html')
 });
 
+app.get('/login', (req, res) => {
+  res.sendFile(base + '/views/login.html')
+});
+
+app.get('/signup', (req, res) => {
+  res.sendFile(base + '/views/signup.html')
+});
+
 
 
 

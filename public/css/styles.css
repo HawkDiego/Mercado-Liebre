@@ -1,96 +1,329 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
-
 * {
-  padding: 0%;
+  box-sizing: border-box;
   margin: 0%;
+  padding: 0%;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+
+/*------------------- Css del header------------------------- */
+
 header {
   background-color: #eac926;
-  font-family: "Roboto", sans-serif;
-}
-h2 {
-  padding: 5%;
-  font-size: 24px;
 }
 
-.buscador {
+header img {
+  width: 40%;
+}
+h2 {
+  text-align: left;
+  padding: 5% 0 5% 5%;
+  font-size: 24px;
+  color: #666;
+}
+
+.form {
+  width: 30%;
   padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 0.4;
+}
+
+.encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .centrado {
+  font-size: 14px;
   text-align: center;
-  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.lista {
+  display: none;
 }
 
 ul li a {
-  padding: 0%;
+  padding-left: 5%;
   font-size: 12px;
-  line-height: 12px;
   text-decoration: none;
   color: black;
 }
 
 .boton {
   text-align: center;
-}
-
-.boton {
   background-color: #0044aa;
   border-radius: 5px;
   color: #fff;
   font-size: 20px;
-  height: 20px;
+  height: 30px;
+  padding-top: 3px;
   margin: auto;
-  padding: 10px;
-  width: 20px;
+  width: 30px;
 }
 
+.banner {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+.lista {
+  display: none;
+}
+
+.lista-1 {
+  margin-bottom: 3%;
+}
+
+/* ------------------Css del main -----------------------*/
+
 main {
+  width: 90%;
+  margin: 10px auto;
   background-color: #ebebeb;
+}
+
+main section figure {
+  margin: 10px 0;
+  background-color: #fff;
+}
+
+main section img {
+  width: 100%;
+}
+
+.box {
+  background-color: #fff;
+  width: 100%;
+  text-align: left;
+  border-top: solid 1px #ebebeb;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10% 0;
+  justify-content: space-around;
+}
+
+main section figure i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  color: #39b54a;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
 }
 
 .oferta {
   color: #39b54a;
-}
-
-figure {
-  display: inline-block;
-  background-color: #fff;
-  margin: 5px 20px 10px 15px;
-  font-size: 16px;
-  object-fit: contain;
-  padding-left: 10px;
-  padding-bottom: 10px;
+  width: 70%;
 }
 
 .precio {
   font-size: 18px;
+  width: 30%;
+  padding-left: 15px;
 }
 
 .descripcion {
   color: #666;
+  padding: 10px 0px 0px 15px;
+  display: none;
 }
 
+/* ----------------------Css del footer--------------------- */
+
 footer {
+  background-color: #fff;
   text-align: center;
   display: block;
-  background-color: #fff;
-  padding-top: 10px;
+  padding: 0 10%;
+  margin-top: 10px;
 }
 
 .icono {
+  padding-top: 10px;
   font-size: 2em;
-  margin-bottom: 10px;
+  margin: 10px 0;
   color: #1259c3;
 }
 
 footer section {
   color: #666;
-  padding: 10%;
 }
 
 .pie {
   color: #666;
   text-align: left;
-  padding: 5%;
+  padding: 2vh 0;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* -------------Formulario de registro----------------- */
+
+h3 {
+  margin: 10px 0;
+}
+
+form {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.datos-u {
+  width: 90vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.drawer {
+  width: 80%;
+  padding: 5px;
+  border-radius: 5px;
+  border: #000 solid 1px;
+}
+
+.radio {
+  margin: 0 10px;
+}
+
+.checkbox {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-left: 30%;
+}
+
+.button {
+  color: #fff;
+  background-color: #1259c3;
+  border-radius: 5px;
+  border: #1259c3 solid 1px;
+  width: 20%;
+  height: 4%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.button-login {
+  width: 80%;
+  padding: 5px;
+  border-radius: 5px;
+  border: #1259c3;
+  background-color: #1259c3;
+  color: #fff;
+}
+
+.drawer:focus {
+  box-shadow: 0px 0px 15px black;
+}
+
+@media (min-width: 361px) {
+  .boton {
+    display: none;
+  }
+
+  section figure {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  main section figure {
+    width: 45%;
+  }
+
+  .precio {
+    width: 60%;
+  }
+
+  .oferta {
+    width: 40%;
+  }
+
+  .descripcion {
+    display: block;
+  }
+
+  .centrado {
+    font-weight: 400;
+    width: 35%;
+    padding: 0 5% 0 5%;
+    flex-grow: 0.5;
+  }
+  .lista {
+    display: flex;
+  }
+
+  ul .lista-1 {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  ul .lista-2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  li {
+    flex-grow: 0.1;
+  }
+
+  .button {
+    width: 15%;
+  }
+}
+
+@media (min-width: 769px) {
+  main section figure {
+    width: 22%;
+  }
+
+  ul li a {
+    font-size: 15px;
+  }
+
+  .centrado {
+    width: 30%;
+    padding-top: 5%;
+  }
+
+  .form {
+    width: 30%;
+  }
+
+  header img {
+    width: 30%;
+  }
 }
