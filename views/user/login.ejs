@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('../partials/head.ejs' ) %>
+
+    <body>
+      <%- include('../partials/header.ejs') %>
+
+        <main>
+          <form action="#" method="get">
+
+            <div class="datos-u">
+              <input type="text" name="usuario" placeholder="Nombre de usuario" id="usuario-n" class="drawer" required>
+              <input type="password" name="password" placeholder="Contraseña" id="contaseña" class="drawer" required>
+              <button type="submit" value="submit" name="enviar" class="button-login"><a href="/"></a>Enviar</button>
+            </div>
+          </form>
+        </main>
+
+    </body>
+    <%- include('../partials/footer.ejs') %>
+
+</html>

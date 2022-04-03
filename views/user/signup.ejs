@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('../partials/head.ejs' ) %>
+
+    <body>
+      <%- include('../partials/header.ejs') %>
+
+        <main>
+          <form action="#" method="get">
+            <h3>Información del usuario</h3>
+
+            <div class="datos-u">
+              <input type="text" name="nombre" placeholder="Nombre y apellido" id="nombre" class="drawer" minlength="4"
+                required>
+              <input type="text" name="usuario-n" placeholder="Nombre de usuario" id="usuiario-n" class="drawer"
+                minlength="4" required>
+              <input type="text" name="email" placeholder="E-mail" id="email" class="drawer" required>
+            </div>
+            <h3>Fecha de nacimiento</h3>
+
+            <p><input type="date" class="drawer" required></p><br>
+            <p><input type="text" name="domicilio" placeholder="Domicilio" class="drawer"></p>
+
+            <h3>Perfil del usuario</h3>
+
+            <label><input type="radio" name="perfil-u" value="comprador" id="comprador" class="radio"> Compador</label>
+            <label><input type="radio" name="perfil-u" value="vendedor" id="vendedor" class="radio"> Vendedor</label>
+
+
+            <h3>Intereses</h3>
+            <div class="checkbox">
+              <label><input type="checkbox" name="inetereses"> Electro</label>
+              <label><input type="checkbox" name="inetereses"> Moda</label>
+              <label><input type="checkbox" name="inetereses"> Hogar</label>
+              <label><input type="checkbox" name="inetereses"> Juguetería</label>
+              <label><input type="checkbox" name="inetereses"> Vida sana</label>
+            </div>
+
+            <p>
+            <h3>Foto de perfil</h3><input type="file" accept=".jpg"></p>
+
+            <div class="datos-u">
+              <input type="password" name="contraseña" placeholder="Contraseña" class="drawer" minlength="8" required>
+              <input type="password" name="confirmacion-c" placeholder="Confirmar contraseña" class="drawer"
+                minlength="8" required>
+            </div>
+
+            <button type="submit" name="enviar" value="submit" class="button"><a href="/"></a>Enviar</button>
+            <button type="reset" name="enviar" value="reset" class="button">Borrar</button>
+
+          </form>
+
+        </main>
+
+    </body>
+    <%- include('../partials/footer.ejs') %>
+
+</html>
